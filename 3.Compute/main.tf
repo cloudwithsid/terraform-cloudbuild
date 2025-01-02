@@ -4,7 +4,7 @@ resource "google_compute_instance" "vm-instance" {
   name = each.value
   
   machine_type = "n2-standard-2"
-  zone         = "us-central1-a"
+  zone         = "asia-south1-a"
 
   boot_disk {
     initialize_params {
