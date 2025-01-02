@@ -1,4 +1,4 @@
-resource "google_compute_instance" "vm-instance" {
+/*resource "google_compute_instance" "vm-instance" {
 
   for_each = var.Instance-Name
   name = each.value
@@ -18,4 +18,11 @@ resource "google_compute_instance" "vm-instance" {
   }
 
   metadata_startup_script = "echo hi > /test.txt"
+}
+*/
+
+resource "google_storage_bucket" "static-site" {
+  name          = "image-store.com.COM1"
+  location      = "IN"
+  force_destroy = true
 }
